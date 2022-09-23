@@ -37,6 +37,9 @@ export const loginTC = (data: LoginParamsType) => (dispatch: Dispatch<ActionsTyp
         .catch((error) => {
             handleServerNetworkError(error, dispatch)
         })
+        .finally( () => {
+            dispatch(setAppStatusAC('idle'))
+        } )
 }
 
 export const logoutTC = () => (dispatch: Dispatch<ActionsType>) => {
@@ -53,6 +56,9 @@ export const logoutTC = () => (dispatch: Dispatch<ActionsType>) => {
         .catch((error) => {
             handleServerNetworkError(error, dispatch)
         })
+        .finally( () => {
+            dispatch(setAppStatusAC('succeeded'))
+        } )
 }
 
 
