@@ -31,7 +31,7 @@ function App({demo = false}: PropsType) {
 
     useEffect(()=>{
         dispatch(initializeAppTC())
-    },[])
+    },[dispatch])
 
     if (!isInitialized) {
         return <div
