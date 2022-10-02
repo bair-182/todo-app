@@ -1,2 +1,6 @@
 
 .idea/workspace.xml
+/yarn.lock
+/yarn-error.log
+/.idea
+/node_modules
