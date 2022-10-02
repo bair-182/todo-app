@@ -19,7 +19,6 @@ type FormikErrorType = {
     rememberMe?: boolean
 }
 
-
 export const Login = () => {
 
     const dispatch = useDispatch();
@@ -65,6 +64,7 @@ export const Login = () => {
                         <p>To log in get registered
                             <a href={'https://social-network.samuraijs.com/'}
                                target='_blank'
+                               rel="noreferrer"
                             > here
                             </a>
                         </p>
@@ -100,7 +100,6 @@ export const Login = () => {
                             Login
                         </Button>
                     </FormGroup>
-
                 </FormControl>
             </form>
 
