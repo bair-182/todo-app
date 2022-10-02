@@ -57,7 +57,7 @@ export const logoutTC = () => (dispatch: Dispatch<ActionsType>) => {
             handleServerNetworkError(error, dispatch)
         })
         .finally( () => {
-            dispatch(setAppStatusAC('succeeded'))
+            dispatch(setAppStatusAC('idle'))
         } )
 }
 
