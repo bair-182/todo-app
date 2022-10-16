@@ -19,7 +19,6 @@ type FormikErrorType = {
     rememberMe?: boolean
 }
 
-
 export const Login = () => {
 
     const dispatch = useDispatch();
@@ -100,7 +99,6 @@ export const Login = () => {
                             Login
                         </Button>
                     </FormGroup>
-
                 </FormControl>
             </form>
 
