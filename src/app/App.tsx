@@ -57,8 +57,10 @@ function App({demo = false}: PropsType) {
                     </Typography>
                     {isLoggedIn && <Button color="error" onClick={logoutTCHandler}>Log out</Button>}
                 </Toolbar>
-                {status === 'loading' && <LinearProgress/>}
             </AppBar>
+            <div style={{ position: "absolute", width: "100%" }}>
+                {status === 'loading' && <LinearProgress color={"primary"} />}
+            </div>
             <Container fixed>
                 <Routes>
                     <Route path={"/"} element={<TodolistsList demo={demo}/>}/>

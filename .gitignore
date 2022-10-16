@@ -1,2 +1,7 @@
 
 .idea/workspace.xml
+/yarn.lock
+/.idea
+/node_modules
+/.gitignore
+/package-lock.json
